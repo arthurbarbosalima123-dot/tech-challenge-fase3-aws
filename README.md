@@ -16,6 +16,7 @@ Pipeline de engenharia de dados em arquitetura medalhão (Bronze → Silver → 
 - [Resultados e insights de negócio](#resultados-e-insights-de-negócio)
 - [Fonte dos dados](#fonte-dos-dados)
 - [Ambiente](#ambiente)
+- [Integrantes](#integrantes)
 
 ## O que este projeto faz
 
@@ -80,3 +81,11 @@ Os dados brutos usados neste projeto (pesquisa **State of Data Brasil**, por Dat
 ## Ambiente
 
 Este projeto foi desenvolvido e executado num ambiente **AWS Academy Learner Lab**. Os nomes de bucket nos scripts foram generalizados (`<seu-bucket-s3>`) para publicação — substitua pelo seu próprio bucket ao reproduzir.
+
+## Integrantes
+
+- Keisy Amorim Moreira Magalhães
+- Luiz Cesar dos Santos
+- Arthur da Silva Barbosa Lima
+- Renato de Oliveira Naddeo
+- Bruna Rodrigues Andrade
