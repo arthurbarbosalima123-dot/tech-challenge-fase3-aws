@@ -44,11 +44,13 @@ docs/
   mapeamento_completo_todas_colunas.csv   De-para das 421 colunas de negócio, entre os 3 anos
 diagramas/
   arquitetura.png                Diagrama da arquitetura (feito no Draw.io)
+relatorios/
+  relatorio_executivo_mercado_dados_ia_v8.pdf   Relatório executivo C-level com os achados de negócio (camada Gold)
 ```
 
 ## Resultados e insights de negócio
 
-A partir da camada Gold, foi produzido um relatório executivo com os principais achados do mercado brasileiro de dados (14.001 profissionais, 2023 a 2025/26):
+A partir da camada Gold, foi produzido um [relatório executivo completo](relatorios/relatorio_executivo_mercado_dados_ia_v8.pdf) com os principais achados do mercado brasileiro de dados (14.001 profissionais, 2023 a 2025/26). Resumo dos indicadores-chave:
 
 | Indicador | Valor |
 |---|---|
