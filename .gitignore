@@ -1,0 +1,17 @@
+# Dados brutos (licença própria do Kaggle - não redistribuir)
+*.csv
+!docs/mapeamento_completo_todas_colunas.csv
+
+# Arquivos do Power BI (binário grande, pode conter dados sensíveis)
+*.pbix
+
+# Arquivos temporários / sistema
+.DS_Store
+Thumbs.db
+*.log
+__pycache__/
+*.pyc
+
+# Ambientes virtuais, se algum dia usar
+venv/
+.venv/
