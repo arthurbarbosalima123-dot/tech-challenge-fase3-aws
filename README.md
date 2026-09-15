@@ -86,4 +86,13 @@ Os dados brutos usados neste projeto (pesquisa **State of Data Brasil**, por Dat
 
 ## Ambiente
 
+markdown
+## Integrantes
+
+- Keisy Amorim Moreira Magalhães
+- Luiz Cesar dos Santos
+- Arthur da Silva Barbosa Lima
+- Renato de Oliveira Naddeo
+- Bruna Rodrigues Andrade
+
 Este projeto foi desenvolvido e executado num ambiente **AWS Academy Learner Lab**. Os nomes de bucket nos scripts foram generalizados (`<seu-bucket-s3>`) para publicação — substitua pelo seu próprio bucket ao reproduzir.
