@@ -14,7 +14,6 @@ Pipeline de engenharia de dados em arquitetura medalhão (Bronze → Silver → 
 - [Arquitetura](#arquitetura)
 - [Estrutura do repositório](#estrutura-do-repositório)
 - [Resultados e insights de negócio](#resultados-e-insights-de-negócio)
-- [Destaques técnicos](#destaques-técnicos)
 - [Fonte dos dados](#fonte-dos-dados)
 - [Ambiente](#ambiente)
 
@@ -74,25 +73,10 @@ A partir da camada Gold, foi produzido um [relatório executivo completo](relato
 2. Focar em casos de uso com ROI claro e alfabetização analítica (*data literacy*) para gestores de negócio.
 3. Investir em equidade de gênero e flexibilidade de trabalho como estratégia de retenção de talentos.
 
-## Destaques técnicos
-
-- **Mapeamento semântico entre 3 fontes com schemas diferentes**: cada pergunta da pesquisa mudou de código/nome entre 2023, 2024 e 2025-2026 — o mapeamento foi construído e validado programaticamente contra os dados reais, não por inspeção manual.
-- **Correção de um bug de cardinalidade no Glue Crawler**: o crawler não detectava corretamente o cabeçalho dos CSVs brutos, catalogando as colunas com nomes genéricos. A leitura foi ajustada para ocorrer diretamente do S3, contornando o problema.
-- **Tratamento de respostas de múltipla escolha em análises agregadas**: campos onde uma célula podia conter múltiplas respostas (ex: `"AWS, Azure"`) são "explodidos" via `UNNEST` no Athena antes da contagem, evitando fragmentação artificial de categorias.
-
 ## Fonte dos dados
 
 Os dados brutos usados neste projeto (pesquisa **State of Data Brasil**, por Data Hackers + Bain & Company) **não estão incluídos neste repositório** — são de uso público mas com termos próprios de licenciamento no Kaggle. Para reproduzir o pipeline, baixe os 3 datasets originais diretamente no Kaggle (busque por "State of Data Brazil" + o ano correspondente) e ajuste os caminhos de bucket S3 nos scripts.
 
 ## Ambiente
-
-markdown
-## Integrantes
-
-- Keisy Amorim Moreira Magalhães
-- Luiz Cesar dos Santos
-- Arthur da Silva Barbosa Lima
-- Renato de Oliveira Naddeo
-- Bruna Rodrigues Andrade
 
 Este projeto foi desenvolvido e executado num ambiente **AWS Academy Learner Lab**. Os nomes de bucket nos scripts foram generalizados (`<seu-bucket-s3>`) para publicação — substitua pelo seu próprio bucket ao reproduzir.
