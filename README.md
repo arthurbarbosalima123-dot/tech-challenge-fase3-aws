@@ -1,6 +1,22 @@
 # Tech Challenge Fase 3 — Pipeline de Dados AWS | State of Data Brasil
 
+![AWS](https://img.shields.io/badge/AWS-S3%20%7C%20Glue%20%7C%20Athena-FF9900?logo=amazonaws&logoColor=white)
+![Python](https://img.shields.io/badge/Python-PySpark-3776AB?logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-Athena%20CTAS-4479A1?logo=amazons3&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboards-F2C811?logo=powerbi&logoColor=black)
+![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-brightgreen)
+
 Pipeline de engenharia de dados em arquitetura medalhão (Bronze → Silver → Gold) construído na AWS, usando a base **State of Data Brasil** (Data Hackers + Bain), anos 2023, 2024 e 2025-2026 — desenvolvido como parte do Tech Challenge da Fase 3 da Pós Tech em Data Analytics (FIAP).
+
+## Sumário
+
+- [O que este projeto faz](#o-que-este-projeto-faz)
+- [Arquitetura](#arquitetura)
+- [Estrutura do repositório](#estrutura-do-repositório)
+- [Resultados e insights de negócio](#resultados-e-insights-de-negócio)
+- [Destaques técnicos](#destaques-técnicos)
+- [Fonte dos dados](#fonte-dos-dados)
+- [Ambiente](#ambiente)
 
 ## O que este projeto faz
 
@@ -29,6 +45,32 @@ docs/
 diagramas/
   arquitetura.png                Diagrama da arquitetura (feito no Draw.io)
 ```
+
+## Resultados e insights de negócio
+
+A partir da camada Gold, foi produzido um relatório executivo com os principais achados do mercado brasileiro de dados (14.001 profissionais, 2023 a 2025/26):
+
+| Indicador | Valor |
+|---|---|
+| Renda mediana nacional | R$ 10.000/mês (faixa modal entre R$ 8k e R$ 12k) |
+| Concentração no Sudeste | 62,27% dos profissionais (SP sozinho: 40,74%) |
+| Participação feminina | 23,5% do total, caindo para 9,28% no topo salarial (> R$ 40k) |
+| Prioridade em IA generativa | 78% das empresas (780+ com orçamento ativo) |
+
+**Principais achados:**
+
+- **Estrutura do mercado**: liderado pelo trio Analista de Dados (24,21%), Cientista de Dados (17,67%) e Engenheiro de Dados (17,44%); 82% dos profissionais têm graduação completa ou pós-graduação.
+- **Remuneração e senioridade**: cargos como Data Product Manager (74,74% sênior+) e ML/AI Engineer (54,93% sênior+) concentram as maiores exigências de senioridade e remuneração.
+- **Diversidade de gênero**: funil nítido — a presença feminina cai de 28,25% no nível júnior para 20,06% em especialista/staff+ e 9,28% no topo salarial.
+- **Stack tecnológico**: AWS lidera como cloud preferida (42-44%), mas o Google Cloud (GCP) cresce até liderar no nível especialista/staff+ (42,99%). Python domina até o nível sênior; SQL vira a linguagem primária no staff+.
+- **Adoção de IA**: uso majoritário de soluções gratuitas ou Copilots no dia a dia; as duas maiores barreiras corporativas são dados não preparados (data readiness) e falta de casos de uso de negócio claros.
+- **Geografia e modelo de trabalho**: São Paulo concentra 40,74% da força de trabalho; a exigência de trabalho 100% presencial é apontada como principal causa de troca de emprego, reforçando a demanda por remoto/híbrido.
+
+**Recomendações estratégicas** (síntese do relatório executivo do projeto):
+
+1. Priorizar governança e *data readiness* antes de expandir iniciativas de IA generativa.
+2. Focar em casos de uso com ROI claro e alfabetização analítica (*data literacy*) para gestores de negócio.
+3. Investir em equidade de gênero e flexibilidade de trabalho como estratégia de retenção de talentos.
 
 ## Destaques técnicos
 
